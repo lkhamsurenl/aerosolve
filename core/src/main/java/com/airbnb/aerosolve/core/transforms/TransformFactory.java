@@ -128,6 +128,10 @@ public class TransformFactory {
         result = new DecisionTreeTransform();
         break;
       }
+      case "math_float" : {
+        result = new FloatFeatureMathTransform();
+        break;
+      }
     }
     if (result != null) {
       result.configure(config, key);
